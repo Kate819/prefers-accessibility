@@ -70,8 +70,6 @@ html {
  * =============
  */
 
-/* stylelint-enable */
-
 @media (prefers-reduced-motion) {
 
   img {
@@ -80,14 +78,24 @@ html {
 
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-reduced-motion) {
 
-  .banner {
-    opacity: .5;
+  .gear {
+    animation: none;
   }
+
+}
+
+@media (prefers-color-scheme: dark) {
 
   body {
     background-color: #222;
   }
 
+  .banner {
+    opacity: .4;
+  }
+
 }
+
+/* stylelint-enable */
